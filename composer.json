@@ -1,0 +1,19 @@
+{
+    "name": "igor/carrosjr",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Igor\\Carrosjr\\": "application/"
+        }
+    },
+    "authors": [
+        {
+            "name": "IGOR IVSON DA SILVA CUNHA",
+            "email": "igorivson@outlook.com"
+        }
+    ],
+    "require": {
+        "doctrine/orm": "^2.9",
+        "doctrine/cache": "1.12.1"
+    }
+}
