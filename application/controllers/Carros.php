@@ -7,7 +7,6 @@ use Igor\Carrosjr\models\CarrosModel;
 
 include_once 'vendor/autoload.php';
 
-
 class Carros extends CI_Controller {
 
 	public function index()

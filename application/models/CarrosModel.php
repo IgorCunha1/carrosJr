@@ -20,6 +20,37 @@ class CarrosModel{
 	/**
 	 * @Column(type="string")
 	 */
+	private $descricao;
+
+	/**
+	 * @Column(type="string")
+	 */
+	private $placa;
+
+	/**
+	 * @Column(type="string")
+	 */
+	private $obsCarro;
+
+	/**
+	 * @Column(type="integer")
+	 */
+	private $km;
+
+	/**
+	 * @Column(type="integer")
+	 */
+	private $anoFab;
+
+	/**
+	 * @Column(type="integer")
+	 */
+	private $anoMod;
+	
+
+	/**
+	 * @Column(type="string")
+	 */
 	private $marca;
 	
 	/**
@@ -28,6 +59,8 @@ class CarrosModel{
 	 */
 	private $modelo;
 
+
+	
 
 	public function getId(){
 		return $this->id;
