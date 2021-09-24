@@ -25,7 +25,7 @@ class CarrosModel{
 	/**
 	 * @Column(type="string")
 	 */
-	private $placa;
+	private $placa = null;
 
 	/**
 	 * @Column(type="string")
@@ -35,17 +35,17 @@ class CarrosModel{
 	/**
 	 * @Column(type="integer")
 	 */
-	private $km;
+	private $km = null;
 
 	/**
 	 * @Column(type="integer")
 	 */
-	private $anoFab;
+	private $anoFab = null;
 
 	/**
 	 * @Column(type="integer")
 	 */
-	private $anoMod;
+	private $anoMod = null;
 	
 
 	/**

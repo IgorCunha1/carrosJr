@@ -30,10 +30,37 @@ class Carros extends CI_Controller {
 		$anoMod = $this->input->post('anoMod');
 		$km = $this->input->post('km');
 		$obsCarro = $this->input->post('obsCarro');
-
 		
+		try{
+				if(!$descricao){
+					throw new \Exception("Você não ")
+					
+				}
+				if(!$marca){
 
-		
+				}
+				if(!$modelo){
+
+				}
+				if(!$placa){
+
+				}
+				if(!$anoFab){
+
+				}
+				if(!$anoMod){
+
+				}
+				if(!$km){
+
+				}
+				if(!$obsCarro){
+					
+				}
+
+	}catch(\Exception $e){
+
+	}
 		$carro->setDescricao($descricao)
 				->setMarca($marca)
 				->setModelo($modelo)

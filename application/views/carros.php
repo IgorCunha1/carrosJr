@@ -55,7 +55,7 @@ include_once 'vendor/autoload.php';
 				</div>
 			</div>
 
-<div class="row" id="formAdcCarro" >
+<div class="row" id="formAdcCarro" style="display: none;">
 <div class="col-md-2"></div>
 	<div class="col-md-8">
               <div class="card">
@@ -87,7 +87,7 @@ include_once 'vendor/autoload.php';
 					  				<div class="col-md-4">
                         <div class="form-group">
                           <label class="bmd-label-floating">Placa</label>
-                          <input type="text" class="form-control" id="placa" name="placa">
+                          <input type="text" class="form-control placa" id="placa" nome="placa">
                         </div>
                     </div>
                       <div class="col-md-2">
