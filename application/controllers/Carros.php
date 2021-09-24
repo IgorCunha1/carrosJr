@@ -17,13 +17,37 @@ class Carros extends CI_Controller {
 	
 	public function adicionaCarro()
 	{
-		$carro = new CarrosModel();
-		
 		$emf = new EntityManagerFactory();
 		$em = $emf->getEntityManager();
+
+		$carro = new CarrosModel();
+		
+		$descricao = $this->input->post('descricao');
+		$marca = $this->input->post('marca');
+		$modelo = $this->input->post('modelo');
+		$placa = $this->input->post('placa');
+		$anoFab = $this->input->post('anoFab');
+		$anoMod = $this->input->post('anoMod');
+		$km = $this->input->post('km');
+		$obsCarro = $this->input->post('obsCarro');
+
+		
+
+		
+		$carro->setDescricao($descricao)
+				->setMarca($marca)
+				->setModelo($modelo)
+				->setPlaca($placa)
+				->setAnoFab($anoFab)
+				->setAnoMod($anoMod)
+				->setKm($km)
+				->setObsCarro($obsCarro);
+		
 		
 		$em->persist($carro);
 		$em->flush();
+
+		$this->template->show('carros');
 		
 	}
 }
